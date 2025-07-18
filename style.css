@@ -44,8 +44,9 @@ img{
     margin-bottom: 45px;
 }
 /* main styles */
-main{
+.list-of-features{
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 85px auto;
     padding: 61px;
@@ -129,6 +130,15 @@ main{
     img{
         width: 100%;
     }
+    .list-of-features{
+        flex-direction: column;
+        margin: 15px auto;
+    }
+    .image-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 8px;
+        padding: 10px;
+    }
 }
 @media screen and (min-width : 576px ) and (max-width:992px) {
     nav{
@@ -136,6 +146,13 @@ main{
         padding: 5px;
     }
     img{
+        width: 100%;
+    }
+    .list-of-features{
+        flex-direction: column;
+        
+    }
+    .details{
         width: 100%;
     }
 
