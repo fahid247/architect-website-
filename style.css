@@ -74,9 +74,61 @@ img{
     font-size: 2.8rem;
     font-weight: bold;
 }
+.headings{
+    margin: 0px;
+
+}
 .description{
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 1.3rem;
+}
+
+/* loved-features css */
+.loved-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+.feature-flex{
+    display: flex;
+    align-items: center;
+    height: 6.8rem;
+     width: 29.25rem;}
+
+.vr{
+    height: 6.5rem;
+    width: 0.38rem;
+    background-color:rgba(255, 144, 14, 1) ;
+
+}
+.main-heading{
+    font-size: 3rem;
+    font-weight: bold;  
+}
+.feature-container{
+    width: 36.25rem;
+}
+.image{
+    width: 50rem;
+}
+.feature{
+    padding:2rem 2rem;
+}
+.headings{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.description, .feature-content{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.architect-image{
+    width: 100%;
+    border-radius: 8px;
 }
 /* shared css */
 
@@ -139,21 +191,35 @@ img{
         gap: 8px;
         padding: 10px;
     }
+    .loved-features{
+        flex-direction: column;
+        
+    }
+    .feature-container{
+        width: calc(100% - 5px);
+
+    }
+    .image{
+        padding: 5px;
+        width: calc(100% - 5px);
+        margin-left: 5px;
+    }
 }
-@media screen and (min-width : 576px ) and (max-width:992px) {
+@media screen and (min-width : 576px ) and (max-width:1000px) {
     nav{
         flex-direction: column;
         padding: 5px;
     }
-    img{
-        width: 100%;
-    }
+    
     .list-of-features{
         flex-direction: column;
         
     }
     .details{
         width: 100%;
+    }
+    .loved-features{
+        flex-direction: column;
     }
 
 }
