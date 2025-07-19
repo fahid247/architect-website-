@@ -1,8 +1,13 @@
-body{
+
+/* nav styles */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    margin: 0px auto;
+}
+.banner{
     max-width: 1440px;
     margin: 0px auto;
 }
-/* nav styles */
 nav{
     display: flex;
     justify-content: space-between;
@@ -95,11 +100,11 @@ img{
 .feature-flex{
     display: flex;
     align-items: center;
-    height: 6.8rem;
-     width: 29.25rem;}
+    width: calc(100% - 7rem);
+   }
 
 .vr{
-    height: 6.5rem;
+    height: 6.8rem;
     width: 0.38rem;
     background-color:rgba(255, 144, 14, 1) ;
 
@@ -162,9 +167,7 @@ img{
 .dark03{
     color:rgba(114, 114, 114, 1);
 }
-.header-bg{
-    color:rgba(255, 144, 14, 0.1);
-}
+
 
 
 /* responsive styles for header */
@@ -178,9 +181,6 @@ img{
     }
     .menu ul li{
         margin-bottom: 10px;
-    }
-    img{
-        width: 100%;
     }
     .list-of-features{
         flex-direction: column;
@@ -200,9 +200,11 @@ img{
 
     }
     .image{
-        padding: 5px;
         width: calc(100% - 5px);
-        margin-left: 5px;
+        margin-left: 10px;
+    }
+    .vr{
+        align-items: stretch;
     }
 }
 @media screen and (min-width : 576px ) and (max-width:1000px) {
@@ -220,6 +222,10 @@ img{
     }
     .loved-features{
         flex-direction: column;
+    }
+     .image{
+        width: calc(100% - 5px);
+        margin-left: 10px;
     }
 
 }
